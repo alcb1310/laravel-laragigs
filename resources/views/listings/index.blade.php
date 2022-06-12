@@ -8,10 +8,8 @@
         @endif
 
         @unless (count($listings) === 0)
-            {{-- <?php foreach($listings as $listing): ?> --}}
             @foreach($listings as $listing)
                 <x-listing-card :listing="$listing" />
-            {{-- <?php endforeach ?> --}}
             @endforeach
 
         @else
